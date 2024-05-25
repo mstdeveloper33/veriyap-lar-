@@ -1,4 +1,8 @@
 # veriyap-lar-
+
+proje 1
+
+
 Insertion Sort Aşamaları
 Dizi: [22, 27, 16, 2, 18, 6]
 
@@ -55,3 +59,59 @@ Dördüncü Adım: Kalan dizideki en küçük eleman 5, 8 ile yer değiştirir.
 
 [2, 3, 4, 5, 7, 9, 8, 15, 6]
 Bu şekilde Selection Sort diziyi adım adım sıralar.
+
+
+
+proje 2
+
+
+
+Merge Sort, diziyi sürekli olarak ikiye bölüp daha sonra bu bölünen parçaları sıralı bir şekilde birleştirerek çalışır. İşlemleri adım adım inceleyelim:
+
+Dizi: [16, 21, 11, 8, 12, 22]
+
+Bölme (Divide) Aşaması:
+İlk bölme: [16, 21, 11] ve [8, 12, 22]
+İkinci bölme: [16] [21, 11] ve [8] [12, 22]
+Üçüncü bölme: [16] [21] [11] ve [8] [12] [22]
+Birleştirme (Conquer) ve Sıralama (Sort) Aşaması:
+İlk birleştirme: [21] ve [11] birleştirilir ve [11, 21] olur.
+[16] ve [11, 21] birleştirilir ve [11, 16, 21] olur.
+İkinci birleştirme: [12] ve [22] birleştirilir ve [12, 22] olur.
+[8] ve [12, 22] birleştirilir ve [8, 12, 22] olur.
+Son birleştirme: [11, 16, 21] ve [8, 12, 22] birleştirilir ve sıralı dizi elde edilir.
+Sonuç:
+
+[11, 16, 21] ve [8, 12, 22] birleştirilir:
+İlk olarak, 8 ve 11 karşılaştırılır. 8 daha küçük olduğu için sonuç dizisine eklenir: [8]
+Sonra, 12 ve 11 karşılaştırılır. 11 daha küçük olduğu için eklenir: [8, 11]
+Daha sonra, 12 ve 16 karşılaştırılır. 12 daha küçük olduğu için eklenir: [8, 11, 12]
+16 ve 21 karşılaştırılır. 16 eklenir: [8, 11, 12, 16]
+21 ve 22 karşılaştırılır. 21 eklenir: [8, 11, 12, 16, 21]
+Son olarak, 22 eklenir: [8, 11, 12, 16, 21, 22]
+Aşamaların tamamlanmış haliyle sıralı dizi:
+
+[8, 11, 12, 16, 21, 22]
+Big-O Gösterimi
+Merge Sort'un zaman karmaşıklığı, her zaman 
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn) olarak bilinir. Çünkü her bölme işleminde dizi ikiye ayrılır ve her birleştirme işleminde dizinin tamamı birleştirilir.
+
+Özetle:
+
+Merge Sort aşamaları, diziyi bölerek ve daha sonra birleştirerek nasıl sıraladığını gösterir.
+Merge Sort'un Big-O zaman karmaşıklığı 
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn) olarak ifade edilir.
